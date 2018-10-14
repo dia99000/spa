@@ -2,7 +2,25 @@
 <!doctype html>
 <html>
 <head>
-	<title>SPA Charpter 1 section 1.2.2</title>
+	<title>SPA Starter</title>
+	<!-- スタイルシート -->
+	<link rel="stylesheet" href="css/spa.css" type="text/css">
+	<link rel="stylesheet" href="css/span.shell.css" type="text/css">
+
+	<!-- サードパーティ javascript -->
+	<script src="js/jq/jquery-3.3.1.js"></script>
+	<script src="js/jq/jquery.uriAnchor.js"></script>
+
+	<!-- javascript -->
+	<script src="js/spa.js"></script>
+	<script src="js/spa.shell.js"></script>
+	<script>
+		// アプリケーションの初期化
+		$(function(){
+			spa.initModule($('#spa'));
+		});
+	</script>
+
 </head>
 <body>
 	<div id="spa">
