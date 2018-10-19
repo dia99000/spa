@@ -1,10 +1,18 @@
 <!-- SPAを実行するためにブラウザが読み込むファイル -->
 <!doctype html>
+<!--
+spa.html
+spaブラウザドキュメント
+-->
 <html>
 <head>
+	<!-- 	IE9移行のレンダリングで、最新の標準をサポート -->
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>SPA Starter</title>
 	<!-- スタイルシート -->
 	<link rel="stylesheet" href="css/spa.css" type="text/css">
+	<link rel="stylesheet" href="css/spa.chat.css" type="text/css">
 	<link rel="stylesheet" href="css/spa.shell.css" type="text/css">
 
 	<!-- サードパーティ javascript -->
@@ -13,7 +21,10 @@
 
 	<!-- javascript -->
 	<script src="js/spa.js"></script>
+	<script src="js/spa.util.js"></script>
+	<script src="js/spa.model.js"></script>
 	<script src="js/spa.shell.js"></script>
+	<script src="js/spa.chat.js"></script>
 	<script>
 		// アプリケーションの初期化
 		$(function(){

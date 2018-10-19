@@ -263,10 +263,13 @@ spa.shell = (function(){
 		// setTimeOut(function(){toggleChat(true);}, 3000);
 		// setTimeOut(function(){toggleChat(false);}, 8000);
 
-		// 我々のスキーマを使うようにuriAnchorを設定する
+		// 我々のスキーマを使うようにuriAnchorを構成する
 		$.uriAnchor.configModule({
 			schema_map: configMap.anchor_schema_map
 		});
+		//機能モジュールを構成して初期化する
+		spa.chat.configModule({});
+		spa.chat.initModule( jqueryMap.$chat );
 
 		//URIアンカー変更イベントを処理する。
 		// これはすべての機能モジュールを設定して初期化した後に行う
