@@ -20,7 +20,7 @@ connectHello = (req,res,next) =>{
 
 app
 	//コンソールにログ情報を出力
-	// .use(connect.logger())
+	.use(connect.logger())
 	//Hello Connectをクライアントに送信してレスポンスを終了
 	.use(connectHello);
 
